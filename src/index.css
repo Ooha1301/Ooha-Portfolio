@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #6366f1; /* Indigo */
+  --accent-light: #a5b4fc;
+  --bg: #f9fafb; /* Soft gray background */
+  --card: #ffffff;
+  --text: #1f2937; /* Slate gray for readability */
+  --muted: #6b7280;
+  --shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  line-height: 1.7;
+  transition: all 0.3s ease;
+}
+
+/* Card Styles */
+.content-card {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.content-card:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+/* Section Button */
+.section-btn {
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.section-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+/* Heading */
+h1, h2 {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* Smooth fade for content transitions */
+.content-card {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Subtle glow for the typing text */
+.typed-cursor {
+  color: var(--accent);
+  font-weight: bold;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
