@@ -80,7 +80,7 @@ export default function App() {
           >
             <h2 className="text-2xl font-semibold mb-4">{active}</h2>
             {active === "About Me" && <AboutMe />}
-            {active === "Internships" && <Internships />}
+            {active === "Experience" && <Internships />}
             {active === "Projects" && <Projects />}
             {active === "Education" && <Education />}
             {active === "Skills" && <Skills />}
