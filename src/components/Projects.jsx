@@ -19,7 +19,7 @@ const Projects = () => {
         "Built a responsive full-stack web application that allows users to explore, list, and manage rental properties. Implemented authentication, property listings, and maps API integration following the MVC pattern.",
       tech: ["Node.js", "Express", "MongoDB", "JavaScript", "HTML", "CSS"],
       github: "https://github.com/Ooha1301/Airbnb_clone",
-      live: "https://airbnb-clone-6es2.onrender.com/listings",
+      live: "https://airbnb-clone-1-2j8e.onrender.com/listings",
     },
     {
       title: "Weather Now App",
